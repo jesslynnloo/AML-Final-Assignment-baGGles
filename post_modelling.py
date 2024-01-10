@@ -57,12 +57,12 @@ def process_bunch_and_predict(model, bunch_folder, transform):
     for frame_path in bunch_frames:
         image = cv2.imread(frame_path)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        image = transform(image).unsqueeze(0)  # Apply transforms and add batch dimension
+        image = transform(image).unsqueeze(0)
         bunch_data.append(image)
 
     bunch_data = torch.cat(bunch_data, dim=0).unsqueeze(0)
     predictions = model(bunch_data)
-    predicted_classes = predictions.argmax(dim=1)  # Assuming your model outputs raw logits
+    predicted_classes = predictions.argmax(dim=1)
 
     return predicted_classes
 
@@ -77,7 +77,7 @@ def process_video_and_vote(model, video_folder, transform):
 
     print(bunch_predictions)
 
-    # Apply majority voting logic
+    # majority voting
     if all(pred == 2 for pred in bunch_predictions):
         return 'Null'
     else:
