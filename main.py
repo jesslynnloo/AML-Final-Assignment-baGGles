@@ -1,5 +1,5 @@
 from post_modelling import load_model, process_video_and_vote
-from extract import extract_frames # Import your module for video preprocessing
+from extract import extract_frames
 import torchvision.transforms as transforms
 import os
 from resize_normalize import process_all_images
