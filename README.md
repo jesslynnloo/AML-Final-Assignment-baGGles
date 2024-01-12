@@ -5,9 +5,13 @@ This is the Final Assignment for WOA7015 Advanced Machine Learning course, Unive
 This assignment is about Autism Spectrum Disorders (ASD) Classification, specifically in hand flapping characteristics classification.
 
 extract.py: The code used to extract frames from videos.
+
 resize_normalize.py: The code used to perform resizing and normalization of the frames.
+
 Augment.py: The code used to perform data augmentation.
+
 main.py: The code used to get the new, unseen input video, and output a final prediction for the input video. Uses extract.py, resize_normalize.py, and post-modelling.py.
+
 post-modelling.py: The code for post-modelling pipeline.
 
 In the 'Model training and testing' folder, there are six python notebooks for our experiments, model training and testing.
