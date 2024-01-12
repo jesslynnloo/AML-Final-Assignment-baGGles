@@ -11,12 +11,15 @@ main.py: The code used to get the new, unseen input video, and output a final pr
 post-modelling.py: The code for post-modelling pipeline.
 
 In the 'Model training and testing' folder, there are six python notebooks for our experiments, model training and testing.
-1. AML_v7_Resnet101.ipynb: The model trained is Resnet-101 based CNN-LSTM, and Cross-Entropy Loss is used.
-2. AML_v7_VGG_val.ipynb: The model trained is VGG-16 based CNN-LSTM, and Cross-Entropy Loss is used.
-3. AML_v8_VGG-Focal Loss.ipynb: The model trained is VGG-16 based CNN-LSTM, and Focal Loss is used.
-4. AML_v8_Resnet.ipynb: The model trained is Resnet-101 based CNN-LSTM, and Focal Loss is used.
-5. AML_LSTM.ipynb: The model trained is LSTM, and Cross-Entropy Loss is used.
-6. AML_BRNN.ipynb: The model trained is Bidirectional_RNN, and Cross Entropy Loss is used.
+1. AML_BRNN.ipynb: The model trained is Bidirectional_RNN, and Cross Entropy Loss is used.
+2. AML_LSTM.ipynb: The model trained is LSTM, and Cross-Entropy Loss is used.
+3. AML_v7_Resnet101.ipynb: The model trained is Resnet-101 based CNN-LSTM, and Cross-Entropy Loss is used.
+4. AML_v7_VGG_val.ipynb: The model trained is VGG-16 based CNN-LSTM, and Cross-Entropy Loss is used.
+5. AML_v8_Resnet101.ipynb: The model trained is Resnet-101 based CNN-LSTM, and Focal Loss is used.
+6. AML_v8_VGG_Focal_Loss.ipynb: The model trained is VGG-16 based CNN-LSTM, and Focal Loss is used.
+
+Model architectures and hyperparameters were tuned manually.
+
 
 The best model is VGG-16 based CNN-LSTM, with learning rate of 0.001, 30 epochs, and Cross-Entropy Loss is used as the loss function.
 For the best model, you can download the .pth file from here: https://drive.google.com/file/d/1-3nzg38NvWVbu5phvDCNiBeNY73WUFM4/view?usp=sharing
