@@ -26,3 +26,5 @@ Model architectures and hyperparameters were tuned manually.
 
 The best model is VGG-16 based CNN-LSTM, with learning rate of 0.001, 30 epochs, and Cross-Entropy Loss is used as the loss function.
 For the best model, you can download the .pth file from here: https://drive.google.com/file/d/1-3nzg38NvWVbu5phvDCNiBeNY73WUFM4/view?usp=sharing
+
+The preprocessed dataset used for model training can be accessed here: https://drive.google.com/file/d/12JDTbiIyrzy3TWMU8QDKQ-voek2bgLki/view?usp=sharing
